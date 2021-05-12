@@ -1,17 +1,8 @@
-#
+# forked from [ZhelinCheng/mint-filter](https://github.com/ZhelinCheng/mint-filter)
 
 > 请升级至3.0.0+，低版本存在一种无法判断的情况。
 
 基于Aho–Corasick算法，更轻巧的JavaScript敏感词过滤库🚀。支持Node.js、浏览器等环境（JavaScript/TypeScript），支持敏感词替换成*号。
-
-![GitHub package.json version](https://img.shields.io/github/package-json/v/ZhelinCheng/mint-filter.svg)
-[![npm version](https://img.shields.io/npm/v/mint-filter.svg?style=flat-square)](https://www.npmjs.com/package/mint-filter)
-[![TypeScript](https://img.shields.io/badge/TypeScript-%3E%3D3.0-green.svg)](https://www.typescriptlang.org/)
-[![Node](https://img.shields.io/badge/Node.js-%3E%3D7.6.0-green.svg)](https://nodejs.org/en/)
-[![License](https://img.shields.io/github/license/ZhelinCheng/mint-filter.svg)](https://github.com/ZhelinCheng/mint-filter/blob/master/LICENSE)
-[![npm](https://img.shields.io/npm/dm/mint-filter.svg)](https://www.npmjs.com/package/mint-filter)
-[![Coverage Status](https://coveralls.io/repos/github/ZhelinCheng/mint-filter/badge.svg?branch=master)](https://coveralls.io/github/ZhelinCheng/mint-filter?branch=master)
-![CI](https://github.com/ZhelinCheng/mint-filter/workflows/CI/badge.svg)
 
 ## 💪 支持平台
 
@@ -48,13 +39,13 @@
 ## 📦 安装
 
 ```javascript
-npm i -S mint-filter
+npm i -S @celebi/mint-filter
 ```
 
 或
 
 ```javascript
-yarn add mint-filter
+yarn add @celebi/mint-filter
 ```
 
 ## 🎉 使用
@@ -64,7 +55,7 @@ yarn add mint-filter
 ```javascript
 // Mint导出是 export default Mint
 // 所以在使用require引用的时，Mint可能挂载在default下面
-const Mint = require('mint-filter').default
+const Mint = require('@celebi/mint-filter').default
 const mint = new Mint(['敏感词数组'])
 
 // 异步方法，该方法返回的是一个Promise对象
@@ -77,7 +68,7 @@ mint.filterSync('word')
 ### TypeScript / ES Module引用
 
 ```typescript
-import Mint from 'mint-filter'
+import Mint from '@celebi/mint-filter'
 const mint = new Mint(['敏感词数组'])
 
 // 异步方法，该方法返回的是一个Promise对象
@@ -100,7 +91,7 @@ mint.filterSync('word')
 该方法将返回过滤文本和被过滤的敏感词。
 
 ```typescript
-import Mint from 'mint-filter'
+import Mint from '@celebi/mint-filter'
 const mint = new Mint(['敏感词'])
 
 mint.filter('这是一个敏感词字符串')

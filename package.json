@@ -1,6 +1,6 @@
 {
-  "name": "mint-filter",
-  "version": "3.0.1-beta.1",
+  "name": "@celebi/mint-filter",
+  "version": "3.0.1-beta.3",
   "description": "基于Aho–Corasick算法，更轻巧的JavaScript敏感词过滤库。🚀",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZhelinCheng/mint-filter.git"
+    "url": "git+https://github.com/ayerss/mint-filter.git"
   },
   "devDependencies": {
     "@types/jest": "26.0.22",
@@ -50,9 +50,9 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ZhelinCheng/mint-filter/issues"
+    "url": "https://github.com/ayerss/mint-filter/issues"
   },
-  "homepage": "https://github.com/ZhelinCheng/mint-filter#readme",
+  "homepage": "https://github.com/ayess/mint-filter#readme",
   "husky": {
     "hooks": {
       "pre-commit": "npm run tslint"
